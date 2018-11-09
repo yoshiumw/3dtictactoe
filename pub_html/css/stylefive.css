@@ -1,0 +1,16 @@
+#lg, #rg, #stats {
+	border-radius: 10px;
+    border: 2px solid #cecece;
+    padding: 10px;
+}
+
+ #dropdown{
+  border: none;
+  background: white;
+  text-decoration: underline;
+  color: blue;
+  font-size: 1.0em;
+  text-align:left;
+  height: 50px;
+  font-style: italic;
+}

@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no"/>
+    <meta charset="utf-8">
+
+    <title>Yo Shium and Nicole Wong</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/stylefive.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+    
+</head>
+<body>
+    <!-- <button class= "btn btn-success" onclick='$(this).hide()'>Click me!</button> -->
+
+    <div class = "container" id= "head">
+      <div class = "row">
+        <div class = "col-12">
+          <h1 class = "text-center">Log-in</h1>
+          <p class = "text-center">Made with love by : Wong^2 <span class="fa fa-heart"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class = "container" id = "lg">
+      <form action="login" method = "post">
+        <div class="form-group">
+          <span class="fa fa-user"></span>
+          <label for="">E-Mail</label>
+          <input type="text" name="name" maxlength="30" class="form-control" required/>
+        </div>
+        <div class="form-group">
+          <span class="fa fa-key"></span>
+          <label for="">Password</label>
+          <input type="password" name="pass" maxlength="30" class="form-control" required/>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary btn-md" id="lgbtn"/>
+
+<!--         <label>
+        
+          <input type="checkbox" checked="checked" name="remember"> Remember Me
+
+        </label> -->
+
+
+      </form>
+      <input class ="btn btn-default text-left" value = 'No account? Register!' id = 'dropdown'>  </input>
+    </div>
+
+    
+    
+    
+
+    <div class = "container" id = "rg">
+      <div class = "row">
+        <div class = "col-12">
+                <div class = "container">
+                  <form action="register" method = "post">
+                    <div class="form-group">
+                      <span class="fa fa-user-plus"></span>
+                      <label for="">First Name</label>
+                      <input type="text" name="fname" maxlength="30" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                      <span class="fa fa-users"></span>
+                      <label for="">Last Name</label>
+                      <input type="text" name="lname" maxlength="30" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                      <span class="fa fa-lock"></span>
+                      <label for="">Password</label>
+                      <input type="password" name="pass" maxlength="30" class="form-control" required/>
+                    </div>
+
+                    <div class="form-group">
+                      <span class="fa fa-envelope"></span>
+                      <label for="">Email</label>
+                      <input type="text" name="email" maxlength="30" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                    <span class="fa fa-birthday-cake"></span>
+                    <label for="">Age</label>
+                    <input type="number" step='1' min= '1' max = '118' name="age" maxlength="30" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                    <label for="">Gender</label>
+                    <input type="radio" name="gender" value="male"> <span class="fa fa-male"></span> Male
+                    <input type="radio" name="gender" value="female"> <span class="fa fa-female"></span>Female
+                    </div>  
+                    <input type="submit" value="Submit" class="btn btn-primary"/>
+                  </form>
+                </div>
+              </div>
+      </div>
+    </div>
+    <input class ="btn btn-default text-left" value = 'Back to Log-in' id = 'btli'>  </input>
+    
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
