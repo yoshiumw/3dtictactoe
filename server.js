@@ -38,7 +38,7 @@ var _head = `  </body>
 
 //---------------------- SERVER --------------------------------------------
 /
-var url = "mongodb://root:1234@ds119129.mlab.com:19129/tes"; 
+var url = "mongodb://root:1234@ds119129.mlab.com:19129/tes";
 //connect to mongodb
 MongoClient.connect(url, function(err, client){
   if (err) console.log(err);
@@ -186,6 +186,7 @@ var onlines;
 
 //Socket setup
 var io = socket(server);
+io.set('transports', ['websocket']); //azure
 var roomno = 1;
 io.on('connection', function(socket){
   console.log('a user connected');
