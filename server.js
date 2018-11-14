@@ -186,7 +186,7 @@ var onlines;
 
 //Socket setup
 var io = socket(server);
-io.set('transports', ['websocket']); //azure
+// io.set('transports', ['websocket']); //azure
 var roomno = 1;
 io.on('connection', function(socket){
   console.log('a user connected');

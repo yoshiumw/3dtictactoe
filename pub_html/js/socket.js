@@ -1,6 +1,6 @@
 //Make connection
-//var socket = io.connect('http://127.0.0.1:14578/'); 
-var socket = io({transports: ['websocket']}); //azure
+var socket = io.connect('http://127.0.0.1:14578/'); 
+//var socket = io({transports: ['websocket']}); //azure
 
   $("#dcBtn").click(function(){
   	console.log('this socket id will be closed ' + socket.id);
