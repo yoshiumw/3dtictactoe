@@ -37,7 +37,7 @@ var _head = `  </body>
 
 
 //---------------------- SERVER --------------------------------------------
-/
+
 var url = "mongodb://root:1234@ds119129.mlab.com:19129/tes";
 //connect to mongodb
 MongoClient.connect(url, function(err, client){
