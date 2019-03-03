@@ -26,5 +26,5 @@ database.collection('your collection name')
 
 4. In socket.js change your connection to your server's url:
 ```
-var socket = io.connect('the url you are running the server on')
+var socket = io.connect('your server url')
 ```
