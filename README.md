@@ -1,30 +1,38 @@
 # 3dtictactoe
+## Description
+A 3D Tic Tac Toe game that authenticates users with a  log-in / registration system.
+Utilizes WebSockets to provide real time gameplay and messaging.
 
 ## Features
-
 * 3D tic tac toe
-* Log in regristration
+* Log in registration
 * In-game messaging
 
-## How to implement 3dtictactoe into your database.
+## Installation
 
-Make the following changes in server.js:
+Clone the directory using git or download from [here.](https://github.com/yoshiumw/3dtictactoe/archive/master.zip)
 
-1. Set the database's url
+## Usage
+To use 3dtictactoe with your database, you will need to make the following changes in server.js
+- Set the database's url
 ```
 var url = "your database url"
 ```
-2. Set the client database to your database 
+- Set the client database to your database 
 ```
 database = client.db('your database name')
 ```
 
-3. Set all database collections to your collection
+- Set all database collections to your collection
 ```
 database.collection('your collection name')
 ```
 
-4. In socket.js change your connection to your server's url:
+- In socket.js change your connection to your server's url:
 ```
 var socket = io.connect('your server url')
 ```
+
+## Credits
+
+Made by Yo Shium Wong and Nicole Wong
