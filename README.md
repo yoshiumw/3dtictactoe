@@ -3,6 +3,8 @@
 A 3D Tic Tac Toe game that authenticates users with a login and registration system.
 Utilizes WebSockets to provide real time gameplay and messaging.
 
+![banner](https://raw.githubusercontent.com/yoshiumw/3dtictactoe/master/3dttt.png)
+
 ## Features
 * 3D tic tac toe
 * Log in registration
